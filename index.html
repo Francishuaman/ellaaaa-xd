@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h3>REGISTRO DE NOTAS</h3>
+	<hr>
+	<div id="form">
+		<label>Alumno</label> <br>
+		<input type="text" id="nombre" class="caja">
+		<button onclick="enviar()" class="boton" > Enviar </button>
+		<br>
+		<label>Cursos</label> <br>
+		<select id="sel">
+			<option>Seleccionar cursos</option>
+			<option value="Algebra">Algebra</option>
+			<option value="Base de Datos">Base de Datos</option>
+			<option value="Ingenieria de Requerimientos">Ingenieria de Requerimientos</option>
+		</select><br>
+		<label>Nota 1:</label>
+		<input type="text" id="nota1" class="caja2"><br>
+		<label>Nota 2:</label>
+		<input type="text" id="nota2" class="caja2"><br>
+		<label>Nota 3:</label>
+		<input type="text" id="nota3" class="caja2"><br>
+		<button onclick="agregar()" class="boton" id="b2"> Agregar Curso</button>
+	</div>
+	<hr>
+	<div id="form2">
+		<label id="alum"></label>
+		<table id="data">
+		<tr>
+			<th>Curso</th>
+			<th>Nota1</th>
+			<th>Nota2</th>
+			<th>Nota3</th>
+			<th>Promedio</th>
+			<th colspan="2">Accion</th>
+		</tr>
+	</table>
+	<label>Ponderado</label>
+	<input type="text" id="pond" class="caja3">
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
